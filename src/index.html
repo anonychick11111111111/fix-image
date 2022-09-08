@@ -10,7 +10,7 @@
 </head>
 <body class="body">
     <div id="toggle">
-        <i class="fas fa-bars"></i>
+        <i class=" menu-toggle-btn fas fa-bars"></i>
     </div>
     <div class="container_body1">
         <!-- // Begin Navbar -->
@@ -56,11 +56,11 @@
                         <img src="./asset/image/number.png" alt="">
                         <p>Happy Customers</p>
                     </div>
-                    <div class="content_nav_amount2">
+                    <div class="content_nav_amount1">
                         <img src="./asset/image/number.png" alt="">
                         <p>Completed House</p>
                     </div>
-                    <div class="content_nav_amount3">
+                    <div class="content_nav_amount1">
                         <img src="./asset/image/number.png" alt="">
                         <p>House Rent</p>
                     </div>
@@ -79,7 +79,7 @@
                     <h2>
                         Search the price you looking for
                     </h2>
-                    <form>
+                    <form action="#" method="get">
                         <div class="select">
                         <select id="author_id" name="author_name">
                             <option value="cuong"><p>Location</p></option>
@@ -103,12 +103,11 @@
                     </form>
                 </div>
         </div>
-    </div>
         <!-- endSearch -->  
-
+    </div>
+    <div class="container_body2">
      <!-- features -->
-    <div class="fetures">
-            <div class="container_body2">
+        <div class="fetures">
                 <div class="wrap">
                     <h1 class="title_fetures">
                         Why do you <br>
@@ -125,9 +124,9 @@
                         </div>
                     </div>
 
-                    <div class="reason_2">
+                    <div class="reason_1">
                         <img src="./asset/image/18116.png" alt="">
-                        <div class="reson_detail2">
+                        <div class="reson_detail1">
                             <h3>Easy payment</h3>
                             <p>The payment we apply is also easy,we provede <br>
                             various kinds of online wallets
@@ -136,9 +135,9 @@
                         </div>
                     </div>
 
-                    <div class="reason_3">
+                    <div class="reason_1">
                         <img src="./asset/image/18117.png" alt="">
-                        <div class="reson_detail3">
+                        <div class="reson_detail1">
                             <h3>Affordable prices</h3>
                             <p>Insurance is also , if there is something that is <br>
                                 hampred then we are willing to be responsible
@@ -151,12 +150,11 @@
                     <img  class="img_Fetures_4865"src="./asset/image/4865.png" alt="">
                     <img  class="img_Fetures_4866" src="./asset/image/4866.png" alt="">
                 </div>       
-            </div>
-    </div>
+            
+        </div>
     <!-- enfetures -->
     <!-- startPopular -->
-    <div class="popular">
-        <div class="container_body3">
+        <div class="popular">
             <h1>Popular Residents</h1>
             <p>
                 Our latest popular resident with minimalist <br>
@@ -166,13 +164,12 @@
                 <button class="group_arrow_before"><i class="fa-solid fa-angle-left"><a href="#"></a></i></button>
                 <button class="group_arrow_after"><i class="fa-solid fa-angle-right"><a href="#"></a></i></button>
             </div>
+        
         </div>
-    </div>
     <!-- Endpopular -->
 
     <!-- //startPopularPrice// -->
-    <div class="popular_price">
-        <div class="container_body4">
+        <div class="popular_price">
             <div class="popular_content1">
                 <a href="#"><img src="./asset/image/4737.png" alt=""></a>
                 <h4>
@@ -254,13 +251,13 @@
                 </div>
             </div>
             
+        
         </div>
-    </div>
     <!-- //EndpopularPrice// -->
 
     <!-- StartSecurityParagrap -->
-    <div class="security_paragraph">
-        <div class="container_body5">
+        <div class="security_paragraph">
+        
             <div class="security_paragraph_wrap">
                 <h3>
                     We Are Trusted
@@ -270,13 +267,13 @@
                     project zone. We always ready to help by providing our best service
                 </p>
             </div>
+        
         </div>
-    </div>
     <!-- //EndSecurityParagrap -->
 
     <!-- StartsSecurityExtra -->
-    <div class="security_extra">
-        <div class="container_body6">
+        <div class="security_extra">
+        
             <div class="security_extra_detail">
                 <img src="./asset/image/17939.png" alt="">
                 <h1>
@@ -295,13 +292,13 @@
             <div class="security_extra_image">
                 <img class="security_extra_image1" src="./asset/image/4743.png" alt="">
             </div>
+        
         </div>
-    </div>
     <!-- EndSecurityExtra -->
-
+    
     <!-- StartReview -->
     <div class="review">
-        <div class="container_body7">
+        
             <h1>What Our Customer <br>
                 Say About Us
             </h1>
@@ -331,13 +328,13 @@
                         </div>
                     </div> 
             </div>
-        </div>
+        
     </div>
     <!-- EndReview -->
 
     <!-- startAdress -->
     <div class="address">
-        <div class="container_body8">
+        
             <div class="wrap">
                 <h1>
                     Get in Touch
@@ -347,19 +344,18 @@
                     there any other questions, pleasde contact us
                 </p>
                 <div class="address_submit_group">
-                    <form>
+                    <form action="#" method="get">
                         <input type="text" placeholder="Your Email Address">
                         <button>Submit</button>
                     </form>
                 </div>
             </div>
-        </div>
+        
     </div>
     <!-- endAdress -->
 
     <!-- startfooter -->
     <div class="footer">
-        <div class="container_body9">
             <div class="logo">
                 <img src="./asset/image/trusted2.png" alt="">
                 <p>As the most visited real <br>
@@ -384,14 +380,16 @@
                     </ul>
                 </div>
             </div>
-        </div>    
+            
     </div>
+   </div> 
     <!-- endfooter -->
 
     <script src="./asset/jquery/jquery-3.6.1.js"></script>
     <script>
         $(document).ready(function(){
-            $('#toggle').click(function(){
+            $(".menu-toggle-btn").click(function(){
+                $(this).toggleClass("fa fa-times");
                 $('.navbar').slideToggle();
             });
         })
